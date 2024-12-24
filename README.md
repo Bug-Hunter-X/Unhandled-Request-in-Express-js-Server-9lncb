@@ -1,0 +1,3 @@
+# Unhandled Request in Express.js Server
+
+This repository demonstrates a common yet subtle error in Express.js applications: forgetting to send a response to the client.  The server will receive the request, log it, but will hang without sending a response back to the client.  This often leads to timeouts or unexpected behavior. The solution shows how to correctly send a response using `res.send()` or `res.end()`.
